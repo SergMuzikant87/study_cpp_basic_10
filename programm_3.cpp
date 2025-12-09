@@ -98,7 +98,7 @@ unsigned int array_of_char_to_int(const char * str)
     
     while(char symbol = *str++)
     {
-        result += (unsigned int)((symbol >= '0') && (symbol <= '9')) * ((result * 9) + (unsigned int)(symbol - '0'));
+        result += ((unsigned int)((symbol >= '0') && (symbol <= '9'))) * ((result * 9) + (unsigned int)(symbol - '0'));
     }
 
     return result;
